@@ -32,6 +32,16 @@ const PROJECTS = [
     href: "https://footycasual.com",
     image: "/work/footycasual.webp",
   },
+  {
+    n: "04",
+    category: "Finance / Tax Services",
+    title: "OneDeduction",
+    desc: "A free referral service matching Australians with vetted, ATO-registered tax agents — built to turn a two-minute form into a qualified match.",
+    tags: ["Web Design", "Lead Generation", "Fintech"],
+    url: "onededuction.com",
+    href: "https://onededuction.com",
+    image: "/work/onededuction.png",
+  },
 ];
 
 export default function FeaturedWork() {
@@ -55,18 +65,18 @@ export default function FeaturedWork() {
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
           {PROJECTS.map((project, i) => (
-            <Reveal key={project.n} delay={i * 0.08} y={28}>
+            <Reveal key={project.n} delay={i * 0.08} y={28} className="h-full">
               <a
                 href={project.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="focus-ring group relative block rounded-2xl"
+                className="focus-ring group relative flex h-full flex-col rounded-2xl"
               >
                 <div
                   className="pointer-events-none absolute -inset-px rounded-2xl bg-grad-brand opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-30"
                   aria-hidden="true"
                 />
-                <article className="relative rounded-2xl border border-white/10 bg-white/[0.02] p-3 transition-all duration-500 ease-out group-hover:-translate-y-1.5 group-hover:border-white/20 sm:p-4">
+                <article className="relative flex h-full flex-col rounded-2xl border border-white/10 bg-white/[0.02] p-3 transition-all duration-500 ease-out group-hover:-translate-y-1.5 group-hover:border-white/20 sm:p-4">
                   <div className="overflow-hidden rounded-lg transition-transform duration-500 ease-out group-hover:scale-[1.015]">
                     <BrowserFrame
                       url={project.url}
@@ -75,8 +85,8 @@ export default function FeaturedWork() {
                     />
                   </div>
 
-                  <div className="flex items-start justify-between gap-4 px-2 pb-2 pt-5 sm:px-3">
-                    <div>
+                  <div className="flex flex-1 items-start justify-between gap-4 px-2 pb-2 pt-5 sm:px-3">
+                    <div className="flex h-full flex-col">
                       <div className="flex items-center gap-2.5 text-xs text-mist-400">
                         <span className="font-mono">{project.n}</span>
                         <span className="h-1 w-1 rounded-full bg-mist-400/50" />
@@ -88,7 +98,7 @@ export default function FeaturedWork() {
                       <p className="mt-2 max-w-md text-sm leading-relaxed text-mist-400">
                         {project.desc}
                       </p>
-                      <div className="mt-4 flex flex-wrap gap-2">
+                      <div className="mt-auto flex flex-wrap gap-2 pt-4">
                         {project.tags.map((tag) => (
                           <span
                             key={tag}
