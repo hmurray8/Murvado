@@ -6,31 +6,12 @@ interface LogoProps {
 
 export function LogoMark({ className = "h-8 w-8" }: { className?: string }) {
   return (
-    <svg
-      viewBox="0 0 48 48"
-      fill="none"
-      className={className}
+    <img
+      src="/small-logo.png"
+      alt=""
       aria-hidden="true"
-    >
-      <defs>
-        <linearGradient id="mvd-grad" x1="4" y1="10" x2="44" y2="38" gradientUnits="userSpaceOnUse">
-          <stop offset="0%" stopColor="#4fa3ff" />
-          <stop offset="50%" stopColor="#8b5cf6" />
-          <stop offset="100%" stopColor="#e341d8" />
-        </linearGradient>
-      </defs>
-      <path
-        d="M6 38V12l12 12L30 12v14"
-        stroke="url(#mvd-grad)"
-        strokeWidth="5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        fill="none"
-      />
-      <rect x="34" y="8" width="4.2" height="4.2" rx="0.8" fill="#8b5cf6" opacity="0.9" />
-      <rect x="40" y="14" width="3.2" height="3.2" rx="0.7" fill="#c084fc" opacity="0.75" />
-      <rect x="44.4" y="19.4" width="2.2" height="2.2" rx="0.5" fill="#e341d8" opacity="0.55" />
-    </svg>
+      className={`${className} object-contain`}
+    />
   );
 }
 
