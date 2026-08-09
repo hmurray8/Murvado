@@ -94,7 +94,13 @@
       "Bash(timeout 40 \"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --screenshot=\"C:\\\\\\\\Users\\\\\\\\Hayden\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\od-shot.png\" --window-size=1200,750 --hide-scrollbars https://onededuction.com)",
       "Bash(python3 -c \"import PIL; print\\('PIL ok'\\)\")",
       "Bash(timeout 40 \"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --screenshot=\"C:\\\\\\\\Users\\\\\\\\Hayden\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\work-section.png\" --window-size=1400,2600 --hide-scrollbars \"http://localhost:5183/#work\")",
-      "Bash(timeout 40 \"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --screenshot=\"C:\\\\\\\\Users\\\\\\\\Hayden\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\work-section2.png\" --window-size=1400,3200 --hide-scrollbars --virtual-time-budget=4000 \"http://localhost:5183/\")"
+      "Bash(timeout 40 \"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless --disable-gpu --screenshot=\"C:\\\\\\\\Users\\\\\\\\Hayden\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\work-section2.png\" --window-size=1400,3200 --hide-scrollbars --virtual-time-budget=4000 \"http://localhost:5183/\")",
+      "Bash(timeout 15 dig +short murvado.com A murvado.com AAAA)",
+      "Bash(timeout 15 dig +short www.murvado.com CNAME)",
+      "Bash(timeout 15 nslookup murvado.com)",
+      "Bash(timeout 15 nslookup www.murvado.com)",
+      "Bash(timeout 20 node -e \"\nconst dns = require\\('dns'\\);\ndns.resolve4\\('murvado.com', \\(err, addrs\\) => console.log\\('murvado.com A:', err ? err.code : addrs\\)\\);\ndns.resolveCname\\('www.murvado.com', \\(err, addrs\\) => console.log\\('www.murvado.com CNAME:', err ? err.code : addrs\\)\\);\ndns.resolve4\\('www.murvado.com', \\(err, addrs\\) => console.log\\('www.murvado.com A:', err ? err.code : addrs\\)\\);\n\" 2>&1)",
+      "Bash(curl -sf http://localhost:5173)"
     ]
   }
 }

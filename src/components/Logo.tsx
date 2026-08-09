@@ -25,7 +25,7 @@ export default function Logo({ className = "", markOnly = false, subtitle = fals
             <span className="text-[15px] sm:text-base font-semibold tracking-tight text-white">
               Murvado
             </span>
-            <span className="text-[15px] sm:text-base font-semibold tracking-tight text-electric-400">
+            <span className="text-[15px] sm:text-base font-semibold tracking-tight bg-gradient-to-r from-[#0985e4] to-[#851bb1] bg-clip-text text-transparent">
               Digital
             </span>
           </span>
