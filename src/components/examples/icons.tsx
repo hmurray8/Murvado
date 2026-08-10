@@ -304,3 +304,43 @@ export function SproutIcon({ className = base }: IconProps) {
     </svg>
   );
 }
+
+export function ScissorsIcon({ className = base }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <circle cx="6" cy="6.5" r="2.2" stroke="currentColor" strokeWidth="1.6" />
+      <circle cx="6" cy="17.5" r="2.2" stroke="currentColor" strokeWidth="1.6" />
+      <path d="M7.6 7.9 20 19M20 5 7.6 16.1" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+export function PaletteIcon({ className = base }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <path
+        d="M12 3.5a8.5 8.5 0 1 0 0 17c1 0 1.6-.8 1.6-1.6 0-.5-.2-.9-.5-1.2-.3-.3-.5-.7-.5-1.2 0-.8.6-1.6 1.6-1.6h1.8A3.5 3.5 0 0 0 20 11.5C20 6.8 16.4 3.5 12 3.5Z"
+        stroke="currentColor"
+        strokeWidth="1.6"
+        strokeLinejoin="round"
+      />
+      <circle cx="7.5" cy="10.5" r="1.1" fill="currentColor" />
+      <circle cx="9.5" cy="7" r="1.1" fill="currentColor" />
+      <circle cx="14.5" cy="7" r="1.1" fill="currentColor" />
+    </svg>
+  );
+}
+
+export function SparkleIcon({ className = base }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className={className} aria-hidden="true">
+      <path
+        d="M12 3.5c.5 3 2 4.5 5 5-3 .5-4.5 2-5 5-.5-3-2-4.5-5-5 3-.5 4.5-2 5-5Z"
+        stroke="currentColor"
+        strokeWidth="1.5"
+        strokeLinejoin="round"
+      />
+      <path d="M19 15c.25 1.4.9 2.1 2.2 2.4-1.3.3-1.95 1-2.2 2.4-.25-1.4-.9-2.1-2.2-2.4 1.3-.3 1.95-1 2.2-2.4Z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round" />
+    </svg>
+  );
+}

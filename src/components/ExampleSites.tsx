@@ -8,6 +8,7 @@ import EditorialCreativeSite from "./examples/sites/EditorialCreativeSite";
 import ImageFirstSite from "./examples/sites/ImageFirstSite";
 import BentoGridSite from "./examples/sites/BentoGridSite";
 import SaasStartupSite from "./examples/sites/SaasStartupSite";
+import BeautySalonSite from "./examples/sites/BeautySalonSite";
 
 const EXAMPLES = [
   {
@@ -45,6 +46,12 @@ const EXAMPLES = [
     label: "SaaS / Startup",
     url: "getflowly.io",
     Site: SaasStartupSite,
+  },
+  {
+    n: "07",
+    label: "Booking-First / Salon",
+    url: "willowandco.com.au",
+    Site: BeautySalonSite,
   },
 ];
 
