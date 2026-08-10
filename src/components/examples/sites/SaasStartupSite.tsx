@@ -84,24 +84,24 @@ export default function SaasStartupSite() {
         </div>
       </header>
 
-      <div className="grid flex-1 grid-cols-2 items-center gap-10 px-10 py-8">
-        <div>
-          <h1 className="text-[32px] font-bold leading-[1.1] tracking-tight">
+      <div className="grid flex-1 grid-cols-2 gap-10 px-10 py-10">
+        <div className="flex h-full flex-col justify-center">
+          <h1 className="text-[42px] font-bold leading-[1.08] tracking-tight">
             The simple way to manage your business.
           </h1>
-          <p className="mt-4 max-w-sm text-[13px] leading-relaxed text-[#1c1a24]/55">
+          <p className="mt-5 max-w-sm text-[15px] leading-relaxed text-[#1c1a24]/55">
             Flowly helps small businesses save time, stay organised and get more done.
           </p>
-          <div className="mt-6 flex items-center gap-3">
-            <span className="rounded-md bg-[#6d28d9] px-5 py-2.5 text-[12.5px] font-semibold text-white">
+          <div className="mt-8 flex items-center gap-3">
+            <span className="rounded-md bg-[#6d28d9] px-6 py-3 text-[13px] font-semibold text-white">
               Start Free Trial
             </span>
-            <span className="rounded-md border border-black/10 px-5 py-2.5 text-[12.5px] font-semibold text-[#1c1a24]">
+            <span className="rounded-md border border-black/10 px-6 py-3 text-[13px] font-semibold text-[#1c1a24]">
               View Demo
             </span>
           </div>
         </div>
-        <div className="h-[230px]">
+        <div className="h-full w-full">
           <DashboardMock />
         </div>
       </div>
