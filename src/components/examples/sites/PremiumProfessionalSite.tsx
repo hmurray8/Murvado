@@ -46,15 +46,12 @@ export default function PremiumProfessionalSite() {
           </span>
         </div>
         <div className="overflow-hidden rounded-sm">
-          <div className="flex h-full w-full flex-col justify-end gap-1.5 bg-gradient-to-br from-[#3b4252] to-[#1c1f28] p-5">
-            {[0.9, 0.7, 0.5, 0.3].map((w, i) => (
-              <span
-                key={i}
-                className="h-6 rounded-[2px] bg-white/[0.07]"
-                style={{ width: `${w * 60}%` }}
-              />
-            ))}
-          </div>
+          <img
+            src="https://loremflickr.com/1000/600/skyscraper,glass?lock=301"
+            alt="Modern glass office tower"
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
 
@@ -72,7 +69,14 @@ export default function PremiumProfessionalSite() {
       </div>
 
       <div className="grid flex-1 grid-cols-2 gap-8 px-10 py-8">
-        <div className="overflow-hidden rounded-sm bg-gradient-to-br from-[#dcd3c4] to-[#c9bda7]" />
+        <div className="overflow-hidden rounded-sm">
+          <img
+            src="https://loremflickr.com/900/600/businesswoman,office?lock=704"
+            alt="Legal professional working at a laptop by natural light"
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        </div>
         <div className="flex flex-col justify-center">
           <span className="text-[10px] font-semibold tracking-[0.15em] text-[#a8752c]">ABOUT US</span>
           <h2 className="mt-2 text-[19px] font-medium leading-snug">

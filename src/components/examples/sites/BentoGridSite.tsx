@@ -68,10 +68,14 @@ export default function BentoGridSite() {
           </div>
         </div>
 
-        <div
-          style={{ gridArea: "image1" }}
-          className="rounded-xl bg-gradient-to-br from-[#8a7460] to-[#463a2d]"
-        />
+        <div style={{ gridArea: "image1" }} className="overflow-hidden rounded-xl">
+          <img
+            src="https://loremflickr.com/800/700/modernhome,architecture?lock=105"
+            alt="Custom-built modern home exterior"
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
         <div style={{ gridArea: "rating" }} className="flex flex-col justify-center gap-1.5 rounded-xl bg-white px-5">
           <div className="flex items-center gap-1.5">
@@ -87,10 +91,14 @@ export default function BentoGridSite() {
           </div>
         </div>
 
-        <div
-          style={{ gridArea: "image2" }}
-          className="rounded-xl bg-gradient-to-br from-[#d9c9b4] to-[#a5906f]"
-        />
+        <div style={{ gridArea: "image2" }} className="overflow-hidden rounded-xl">
+          <img
+            src="https://loremflickr.com/700/350/modernkitchen?lock=431"
+            alt="Modern kitchen interior renovation"
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+        </div>
 
         <div style={{ gridArea: "full" }} className="flex flex-col justify-center rounded-xl bg-white px-5">
           <div className="text-[11.5px] font-semibold text-[#1c1917]">

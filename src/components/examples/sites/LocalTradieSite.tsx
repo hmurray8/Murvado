@@ -71,11 +71,15 @@ export default function LocalTradieSite() {
             </span>
           </div>
         </div>
-        <div className="relative z-10 ml-auto hidden h-full w-[300px] items-center justify-center self-stretch lg:flex">
-          <div className="relative flex h-[78%] w-full items-center justify-center overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-[#1a2c52] to-[#0b1220]">
-            <span className="flex h-20 w-20 items-center justify-center rounded-full bg-[#2f6fed]/20 text-[#5b9dfd]">
-              <WrenchIcon className="h-9 w-9" />
-            </span>
+        <div className="relative z-10 ml-auto hidden h-full w-[620px] items-center justify-center self-stretch lg:flex">
+          <div className="relative h-[78%] w-full overflow-hidden rounded-2xl border border-white/10">
+            <img
+              src="https://loremflickr.com/1240/780/constructionworker,tools?lock=613"
+              alt="Tradesperson at work with tools"
+              loading="lazy"
+              className="h-full w-full object-cover"
+            />
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#0b1220]/50 via-transparent to-transparent" />
           </div>
         </div>
       </div>

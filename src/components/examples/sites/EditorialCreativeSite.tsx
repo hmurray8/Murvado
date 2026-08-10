@@ -8,10 +8,10 @@ const FEATURES = [
 ];
 
 const PLATES = [
-  "from-[#8a5a3a] to-[#3c2416]",
-  "from-[#6f3f2e] to-[#2a1710]",
-  "from-[#9c6a3f] to-[#4a2c15]",
-  "from-[#5c3826] to-[#211008]",
+  { query: "steak,dinner,plate", lock: 401, alt: "Seared fish plate with herbs" },
+  { query: "pasta,plate", lock: 402, alt: "Pasta dish with parmesan" },
+  { query: "gourmetsalad", lock: 422, alt: "Fresh salad plate" },
+  { query: "dessert,plating", lock: 411, alt: "Seasonal fruit dessert plate" },
 ];
 
 export default function EditorialCreativeSite() {
@@ -64,8 +64,15 @@ export default function EditorialCreativeSite() {
           </span>
         </div>
         <div className="grid grid-cols-4 gap-2.5">
-          {PLATES.map((g, i) => (
-            <div key={i} className={`rounded-md bg-gradient-to-br ${g}`} />
+          {PLATES.map((plate) => (
+            <div key={plate.lock} className="overflow-hidden rounded-md">
+              <img
+                src={`https://loremflickr.com/340/280/${plate.query}?lock=${plate.lock}`}
+                alt={plate.alt}
+                loading="lazy"
+                className="h-full w-full object-cover"
+              />
+            </div>
           ))}
         </div>
       </div>

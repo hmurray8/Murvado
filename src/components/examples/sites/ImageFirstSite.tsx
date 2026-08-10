@@ -9,7 +9,14 @@ const FEATURES = [
 export default function ImageFirstSite() {
   return (
     <div className="flex h-full w-full flex-col font-sans">
-      <div className="relative flex flex-1 flex-col overflow-hidden bg-gradient-to-br from-[#16241c] via-[#0e1811] to-[#050a07]">
+      <div className="relative flex flex-1 flex-col overflow-hidden bg-[#0e1811]">
+        <img
+          src="https://picsum.photos/seed/wild-earth-landscapes/1600/1000"
+          alt="Snow-capped mountain range framed by pine trees"
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#050a07] via-[#0e1811]/55 to-[#0e1811]/25" />
         <div
           className="pointer-events-none absolute inset-0"
           style={{
