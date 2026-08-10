@@ -100,7 +100,15 @@
       "Bash(timeout 15 nslookup murvado.com)",
       "Bash(timeout 15 nslookup www.murvado.com)",
       "Bash(timeout 20 node -e \"\nconst dns = require\\('dns'\\);\ndns.resolve4\\('murvado.com', \\(err, addrs\\) => console.log\\('murvado.com A:', err ? err.code : addrs\\)\\);\ndns.resolveCname\\('www.murvado.com', \\(err, addrs\\) => console.log\\('www.murvado.com CNAME:', err ? err.code : addrs\\)\\);\ndns.resolve4\\('www.murvado.com', \\(err, addrs\\) => console.log\\('www.murvado.com A:', err ? err.code : addrs\\)\\);\n\" 2>&1)",
-      "Bash(curl -sf http://localhost:5173)"
+      "Bash(curl -sf http://localhost:5173)",
+      "Bash(curl -s http://localhost:5183)",
+      "Bash(jobs)",
+      "Bash(timeout 10 bash -c 'ls ~/.cache/ms-playwright 2>/dev/null; npm ls -g --depth=0 2>/dev/null | grep -i -E \"playwright|puppeteer\"; which node npx')",
+      "Bash(timeout 15 bash -c 'node -e \"require.resolve\\(\\\\\"playwright\\\\\"\\)\" 2>&1; find ~/.nvm -maxdepth 6 -iname \"playwright\" -type d 2>/dev/null | head; npm root -g')",
+      "Bash(mkdir -p /tmp/claude-1000/-mnt-c-Users-Hayden-Documents-GitHub-murvado/a5d65cfc-5d81-4455-8ce9-82ac9684002b/scratchpad/shots)",
+      "Bash(timeout 60 npx --yes playwright@1.48.0 --version)",
+      "Bash(timeout 60 npx playwright install chromium)",
+      "Bash(curl *)"
     ]
   }
 }

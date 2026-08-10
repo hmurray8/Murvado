@@ -61,3 +61,13 @@ body {
 .focus-ring {
   @apply outline-none focus-visible:ring-2 focus-visible:ring-electric-400 focus-visible:ring-offset-2 focus-visible:ring-offset-ink-950;
 }
+
+/* Renders a fixed-size "site canvas" scaled to fill its responsive parent,
+   so one component works as both a small grid thumbnail and a large preview. */
+.site-scale-frame {
+  container-type: inline-size;
+}
+
+.site-scale-canvas {
+  transform: scale(calc(100cqw / var(--canvas-w, 1280px)));
+}

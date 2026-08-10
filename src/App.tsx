@@ -2,6 +2,7 @@ import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import Trust from "./components/Trust";
 import FeaturedWork from "./components/FeaturedWork";
+import ExampleSites from "./components/ExampleSites";
 import Services from "./components/Services";
 import WhyMurvado from "./components/WhyMurvado";
 import Process from "./components/Process";
@@ -17,6 +18,7 @@ export default function App() {
         <Hero />
         <Trust />
         <FeaturedWork />
+        <ExampleSites />
         <Services />
         <WhyMurvado />
         <Process />
