@@ -70,7 +70,7 @@ export default function BentoGridSite() {
 
         <div style={{ gridArea: "image1" }} className="overflow-hidden rounded-xl">
           <img
-            src="https://loremflickr.com/800/700/modernhome,architecture?lock=105"
+            src="/examples/bento-grid/home-exterior.jpg"
             alt="Custom-built modern home exterior"
             loading="lazy"
             className="h-full w-full object-cover"
@@ -93,7 +93,7 @@ export default function BentoGridSite() {
 
         <div style={{ gridArea: "image2" }} className="overflow-hidden rounded-xl">
           <img
-            src="https://loremflickr.com/700/350/modernkitchen?lock=431"
+            src="/examples/bento-grid/kitchen.jpg"
             alt="Modern kitchen interior renovation"
             loading="lazy"
             className="h-full w-full object-cover"

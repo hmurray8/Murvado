@@ -8,10 +8,10 @@ const FEATURES = [
 ];
 
 const PLATES = [
-  { query: "steak,dinner,plate", lock: 401, alt: "Seared fish plate with herbs" },
-  { query: "pasta,plate", lock: 402, alt: "Pasta dish with parmesan" },
-  { query: "gourmetsalad", lock: 422, alt: "Fresh salad plate" },
-  { query: "dessert,plating", lock: 411, alt: "Seasonal fruit dessert plate" },
+  { file: "plate-steak.jpg", lock: 401, alt: "Seared fish plate with herbs" },
+  { file: "plate-pasta.jpg", lock: 402, alt: "Pasta dish with parmesan" },
+  { file: "plate-salad.jpg", lock: 422, alt: "Fresh salad plate" },
+  { file: "plate-dessert.jpg", lock: 411, alt: "Seasonal fruit dessert plate" },
 ];
 
 export default function EditorialCreativeSite() {
@@ -67,7 +67,7 @@ export default function EditorialCreativeSite() {
           {PLATES.map((plate) => (
             <div key={plate.lock} className="overflow-hidden rounded-md">
               <img
-                src={`https://loremflickr.com/340/280/${plate.query}?lock=${plate.lock}`}
+                src={`/examples/editorial-creative/${plate.file}`}
                 alt={plate.alt}
                 loading="lazy"
                 className="h-full w-full object-cover"

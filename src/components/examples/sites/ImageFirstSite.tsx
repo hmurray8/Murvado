@@ -11,7 +11,7 @@ export default function ImageFirstSite() {
     <div className="flex h-full w-full flex-col font-sans">
       <div className="relative flex flex-1 flex-col overflow-hidden bg-[#0e1811]">
         <img
-          src="https://picsum.photos/seed/wild-earth-landscapes/1600/1000"
+          src="/examples/image-first/hero.jpg"
           alt="Snow-capped mountain range framed by pine trees"
           loading="lazy"
           className="absolute inset-0 h-full w-full object-cover"

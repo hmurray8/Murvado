@@ -108,7 +108,9 @@
       "Bash(mkdir -p /tmp/claude-1000/-mnt-c-Users-Hayden-Documents-GitHub-murvado/a5d65cfc-5d81-4455-8ce9-82ac9684002b/scratchpad/shots)",
       "Bash(timeout 60 npx --yes playwright@1.48.0 --version)",
       "Bash(timeout 60 npx playwright install chromium)",
-      "Bash(curl *)"
+      "Bash(curl *)",
+      "WebSearch",
+      "WebFetch(domain:unsplash.com)"
     ]
   }
 }

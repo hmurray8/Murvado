@@ -56,7 +56,7 @@ export default function BeautySalonSite() {
         <div className="relative h-full w-full">
           <div className="h-full w-full overflow-hidden rounded-2xl">
             <img
-              src="https://loremflickr.com/900/780/beautysalon?lock=811"
+              src="/examples/beauty-salon/hero.jpg"
               alt="Calming salon ambience with candles and fresh flowers"
               loading="lazy"
               className="h-full w-full object-cover"

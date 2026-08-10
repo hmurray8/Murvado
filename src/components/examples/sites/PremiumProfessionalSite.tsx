@@ -47,7 +47,7 @@ export default function PremiumProfessionalSite() {
         </div>
         <div className="overflow-hidden rounded-sm">
           <img
-            src="https://loremflickr.com/1000/600/skyscraper,glass?lock=301"
+            src="/examples/premium-professional/skyscraper.jpg"
             alt="Modern glass office tower"
             loading="lazy"
             className="h-full w-full object-cover"
@@ -71,7 +71,7 @@ export default function PremiumProfessionalSite() {
       <div className="grid flex-1 grid-cols-2 gap-8 px-10 py-8">
         <div className="overflow-hidden rounded-sm">
           <img
-            src="https://loremflickr.com/900/600/businesswoman,office?lock=704"
+            src="/examples/premium-professional/businesswoman.jpg"
             alt="Legal professional working at a laptop by natural light"
             loading="lazy"
             className="h-full w-full object-cover"

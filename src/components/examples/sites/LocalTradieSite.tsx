@@ -74,7 +74,7 @@ export default function LocalTradieSite() {
         <div className="relative z-10 ml-auto hidden h-full w-[620px] items-center justify-center self-stretch lg:flex">
           <div className="relative h-[78%] w-full overflow-hidden rounded-2xl border border-white/10">
             <img
-              src="https://loremflickr.com/1240/780/constructionworker,tools?lock=613"
+              src="/examples/local-tradie/hero.jpg"
               alt="Tradesperson at work with tools"
               loading="lazy"
               className="h-full w-full object-cover"
