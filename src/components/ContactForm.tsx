@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/hello@murvado.com";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/h.murray8@outlook.com";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
