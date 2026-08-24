@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/h.murray8@outlook.com";
+const FORM_ENDPOINT = "https://formsubmit.co/ajax/h.murray8@outlook.com";
 
 type Status = "idle" | "submitting" | "success" | "error";
 
@@ -16,7 +16,7 @@ export default function ContactForm() {
     setStatus("submitting");
 
     try {
-      const res = await fetch(FORMSPREE_ENDPOINT, {
+      const res = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: { Accept: "application/json" },
         body: new FormData(form),
@@ -55,8 +55,9 @@ export default function ContactForm() {
       className="mx-auto mt-10 max-w-xl text-left"
       noValidate
     >
-      <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+      <input type="text" name="_honey" className="hidden" tabIndex={-1} autoComplete="off" />
       <input type="hidden" name="_subject" value="New project enquiry — Murvado Digital site" />
+      <input type="hidden" name="_captcha" value="false" />
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
